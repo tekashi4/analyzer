@@ -210,7 +210,7 @@ ws.onmessage = function(msg) {
       } 
      
     for(var i=0; i<20+1; i++){
-        if (i < 10){ // Cut graph
+        if (i < 20){ // Cut graph
     		if (spot[i] > spot[i+1]) {		
     		    var mColorDigit = "#1439ff";
     	    } else if(spot[i] < spot[i+1]) {
