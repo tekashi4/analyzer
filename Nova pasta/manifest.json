@@ -1,0 +1,20 @@
+{
+  "name": "Lsprats",
+  "description": "Google Chrome Application analyzes Data from Binary server",
+  "version": "1.0",
+  "manifest_version": 2,
+  "app": {
+      "background": {
+          "scripts": ["background.js"]
+       }
+   },
+   "permissions": ["alwaysOnTopWindows" ],
+
+   "icons": { 
+    "76": "images/favicon-76x76.png",
+    "96": "images/favicon-96x96.png",
+    "139": "images/favicon-139x139.png",
+    "500": "images/favicon-500x500.png"
+   
+  }
+}
