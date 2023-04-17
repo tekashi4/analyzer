@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ANALIZER ESTUDIO ESHES</title>
+    <nav id="menu">
+    <ul>
+    <li><a href="https://smarttrader.deriv.com" target="_blank">SMART TRADER</a></li>
+    <ul>
+  </nav>
+
+
+    <link href="images/favicon-16x16.png" type="image/png" rel="icon" sizes="16x16">
+    <link href="images/favicon-32x32.png" type="image/png" rel="icon" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="digits.js"></script>
+  </head>
+  <body class="EN">
+
+
+    <h1 class="neonText" hrf="" target="_blank">💎<i>ANALIZER ESTUDIO ESHES</i>💎</h1>
+      <style>
+       h1{
+        font-size:15px;
+        font-family: arial;
+        text-shadow: 6px 6px 6px red ;
+        color: white;}
+
+
+        iframe#surface {
+          width: 100%;
+          height: 350px;
+          border:solid #F3686D;
+          overflow:auto;
+         
+        }
+ </style>
+
+ <style>
+.neonText {
+  animation: flicker 3.5s infinite alternate;
+  color: white;
+}
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(255, 0, 68),
+      0 0 80px rgb(255, 0, 68),
+      0 0 90px rgb(255, 0, 68),
+      0 0 100px rgb(255, 0, 68),
+      0 0 150px rgb(255, 0, 68),
+  
+  }
+  
+  20%, 40%, 60%, 80% {        
+      text-shadow: none;
+  }    
+}
+
+ </style>
+    <div class="menu">
+      <span class="" title="R_100">100</span>
+      <span class="menu-active" title="R_10">10</span>
+      <span class="" title="R_25">25</span>
+      <span class="" title="R_50">50</span>
+      <span class="" title="R_75">75</span>
+      <span class="" title="RDBEAR">BEAR</span>
+      <span class="" title="RDBULL">BULL</span>
+    </div>
+        <div class="menu">
+      <span class="" title="1HZ100V">100(1s)</span>
+      <span class="" title="1HZ10V">10(1s)</span>
+      <span class="" title="1HZ25V">25(1s)</span>
+      <span class="" title="1HZ50V">50(1s)</span>
+      <span class="" title="1HZ75V">75(1s)</span>
+    </div>
+   
+      <div id="placecol" class="placecol">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      </div>
+
+    <div class="chartContainer" id="chartContainer"></div>
+    <div id="digits" class="digits">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span> 
+      </div>
+      <center>
+      <!--<img src="ESHES.ONDAS.jpg" style="width:400px"alt="foto de ALEJANDRO ESHES"/> -->
+    </center>
+    <div align="center">
+      <style>
+        table {
+          border: none;
+          width:100%;
+          height:80%;
+          border:3px solid whitesmoke;
+          border-collapse:collapse;
+          padding:0px;
+        }
+        table th {
+          padding:0px;
+          border: none;
+        }
+        table td {
+          border:none;
+          text-align:center;
+          padding:0px;
+        }
+        .azul {
+          background: #86c2e1;
+          color: #3342bc;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .rojo {
+          background: #d13a38;
+          color: whitesmoke;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .azul-claro {
+          background: #b3d3e0;
+          border: none;
+        }
+        .rojo-claro {
+          background: #d85d67;
+          border: none;
+        }
+        .azul-claro-f {
+          background: #b3d3e0;
+          border: none;
+          color: #0775a6;
+          font-size: 20px;
+          font-weight: 1000;
+        }
+
+        .rojo-claro-f {
+          background: #d85d67;
+          border: none;
+          color: #b81516;
+          font-size: 20px;
+          font-weight: 1000;
+        }
+
+        .title-number {
+           background: white;
+           color: #850018;
+           font-size: 15px;
+           font-weight: 1000;
+           border-radius: 100%;
+        }
+
+        .tooggle-azul {
+          background: #3342bc;
+          color: white;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+
+        .tooggle-rojo {
+          background: white;
+          color:#d13a38;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+      </style>
+    </head>
+    <body>
+      <table cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="cinco-azul-9">5&nbsp;</td>
+            <td class="azul" id="cinco-azul-1">5&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="1" class="title-number">C2</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="seis-azul">6&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul" id="cuatro-azul">4&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="1" class="title-number">C1</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="siete-azul">7&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro" colspan="2"><img src="images/up.png" alt="" width="30px"></td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul" id="tres-azul">3&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="ocho-azul">8&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul" id="dos-azul">&nbsp;2</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="azul" id="nueve-azul">9&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro-f" align="center" colspan="2" id="cero-azul">0</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul-claro">&nbsp;</td>
+            <td class="azul" id="uno-azul">&nbsp;1</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="rojo" id="uno-rojo">&nbsp;1</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro-f" align="center" colspan="2" id="cero-rojo">0</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo" id="nueve-rojo">9&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="rojo" id="dos-rojo">2&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo" id="ocho-rojo">8&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="rojo" id="tres-rojo">&nbsp;3</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro" colspan="2"><img src="images/down.png" alt="" width="30px"></td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo" id="siete-rojo">7&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="1" class="title-number">C3</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="rojo" id="cuatro-rojo">4&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo-claro">&nbsp;</td>
+            <td class="rojo" id="seis-rojo">6&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td colspan="1" class="title-number">C4</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="rojo" id="cinco-rojo-9">5&nbsp;</td>
+            <td class="rojo" id="cinco-rojo-1">5&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+    <div class="chartContainerDigit" id="chartContainerDigit"></div>
+
+
+
+    <script src="canvasjs.min.js"></script>
+ 
+  </body>
+</html>
