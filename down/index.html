@@ -648,7 +648,9 @@ var chart = new CanvasJS.Chart("chartContainer", {
     tickLength: 0,
     lineThickness: 1
 	},
-	axisY: {
+	axisY: {stripLines:[{
+                color:"black",
+			}],
 		includeZero: false,
     titleFontSize: 0,
     labelFontSize: 0,
@@ -1407,6 +1409,7 @@ const ticksResponse = async (res) => {
         dps.shift();
       }
     }
+	  chart.options.axisY.stripLines[0].value =  spot[0];
     
     chart.render();
 
