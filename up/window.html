@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lsprats Analyzer</title>
+    <link href="images/favicon-16x16.png" type="image/png" rel="icon" sizes="16x16">
+    <link href="images/favicon-32x32.png" type="image/png" rel="icon" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="EN">
+    <h1>
+      <span class="span"><img class="InterAnalyzerV8" src="images/Logo1.png" type="image/png" rel="icon" sizes="192x192">
+      </span>
+      <span class="text">Analizer StaticBlue</span>
+      <span class="span"><img class="InterAnalyzerV8" src="images/Logo2.png" type="image/png" rel="icon" sizes="192x192">
+      </span>
+    </h1>
+    <div class="menu">
+      <span class="" title="R_100" id="r100">100</span>
+      <span class="" title="R_10" id="r10">10</span>
+      <span class="" title="R_25" id="r25">25</span>
+      <span class="" title="R_50" id="r50">50</span>
+      <span class="" title="R_75" id="r75">75</span>
+      <span class="" title="RDBEAR" id="rdbear">BEAR</span>
+      <span class="" title="RDBULL" id="rdbull">BULL</span>
+    </div>
+    
+     <div id="placecol" class="placecol">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      </div>
+
+    <div class="chartContainer" id="chartContainer"></div>
+    <div id="digits" class="digits">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span> 
+      </div>
+      <center>
+      <!--<img src="ESHES.ONDAS.jpg" style="width:400px"alt="foto de ALEJANDRO ESHES"/> -->
+    </center>
+    <div align="center">
+      <style>
+        table {
+          border: none;
+          width:50%;
+          height:100%;
+          border:3px solid rgb(233, 195, 195);
+          border-collapse:collapse;
+          padding:7px;
+        }
+        table th {
+          padding:7px;
+          border: none;
+        }
+        table td {
+          border:none;
+          text-align:center;
+          padding:10px;
+        }
+        .azul {
+          background: #86c2e1;
+          color: #3342bc;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .rojo {
+          background: #d13a38;
+          color: whitesmoke;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .amarillo {
+          background: #cdd625;
+          color: whitesmoke;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .verde {
+          background: #27e146;
+          color: whitesmoke;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+        .azul-claro {
+          background: #b3d3e0;
+          border: none;
+        }
+        .rojo-claro {
+          background: #d85d67;
+          border: none;
+        }
+        .azul-claro-f {
+          background: #b3d3e0;
+          border: none;
+          color: #0775a6;
+          font-size: 25px;
+          font-weight: 1000;
+        }
+
+        .rojo-claro-f {
+          background: #d85d67;
+          border: none;
+          color: #b81516;
+          font-size: 25px;
+          font-weight: 1000;
+        }
+
+        .title-number {
+           background: white;
+           color: #850018;
+           font-size: 20px;
+           font-weight: 1000;
+           border-radius: 100%;
+        }
+
+        .tooggle-azul {
+          background: #1300bb;
+          color: white;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+
+        .tooggle-rojo {
+          background: white;
+          color:#d13a38;
+          font-weight: 1000;
+          border: 3px solid #ead7d7;
+          border-bottom: 3px solid #a3686f;
+        }
+      </style>
+    </head>
+    <body>
+      <table cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+      <td class="azul" id="">C1&nbsp;</td>
+      <td class="#d85d67">&nbsp;</td>
+      <td class="#d85d67">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="cero-azul-1">0&nbsp;</td>
+            <td class="rojo" id="">C3&nbsp;</td>
+      <td class="#d85d67">&nbsp;</td>
+      <td class="#d85d67">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td class="azul" id="uno-azul">1&nbsp;</td>
+			
+      
+      <td class="rojo" id="cinco-rojo-1">5&nbsp;</td>
+      <td class="azul" id="">C2&nbsp;</td>
+           
+            <td class="#d85d67">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>&nbsp;</td>
+			
+          </tr>
+<tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="azul" id="dos-azul">2&nbsp;</td>
+            <td class="rojo" id="cero-rojo-1">0&nbsp;</td>
+           
+            <td class="azul" id="seis-azul">6&nbsp;</td>
+            <td class="rojo" id="">C4&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+             <td>&nbsp;</td>
+			<td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td class="azul" id="tres-azul">3&nbsp;</td>
+			
+      <td class="rojo" id="uno-rojo">1&nbsp;</td>
+           
+            <td class="azul" id="siete-azul">7&nbsp;</td>
+            <td class="rojo" id="cinco-rojo-9">5&nbsp;</td>
+            
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+             <td>&nbsp;</td>
+			<td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td class="azul" id="cuatro-azul">4&nbsp;</td>
+            
+        
+                       
+            <td class="rojo" id="dos-rojo">2&nbsp;</td>
+            
+                     
+            <td class="azul" id="ocho-azul">8&nbsp;</td>
+            <td class="rojo" id="seis-rojo">6&nbsp;</td>
+            
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td class="azul" id="cinco-azul-1">5&nbsp;</td>
+      
+            <td class="rojo" id="tres-rojo">3&nbsp;</td>
+                    
+            <td class="azul" id="nueve-azul">9&nbsp;</td>
+            <td class="rojo" id="siete-rojo">7&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td class="azul" id="">C1&nbsp;</td>
+            <td class="rojo" id="cuatro-rojo">4&nbsp;</td>
+            <td class="azul" colspan="0" id="cero-azul-9">0</td>
+            <td class="rojo" id="ocho-rojo">8&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+            <td class="rojo" id="">C3&nbsp;</td>
+            <td class="azul" id="cinco-azul-9">5&nbsp;</td>
+            <td class="rojo" id="nueve-rojo">9&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+			
+            <td class="azul" id="">C2&nbsp;</td>
+            <td class="rojo" id="cero-rojo-9">0&nbsp;</td>
+            <td>&nbsp;</td>
+          
+            <td></td>
+            <td>&nbsp;</td>
+          </tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class="rojo" id="">C4&nbsp;</td>
+          <tr>
+            
+            
+            <td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+            
+			<td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+			      <td class="#d85d67">&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+            <td class="#d85d67">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          
+            
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br><br>
+
+  </div>
+    <div class="chartContainerDigit" id="chartContainerDigit"></div>
+
+
+
+    <script src="canvasjs.min.js"></script>
+    
+  </body>
+<script type="module">
+
+var getUrlParameter = function getUrlParameter(sParam) {
+      var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+      for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split('=');
+
+          if (sParameterName[0] === sParam) {
+              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+          }
+      }
+  };
+
+var indice = getUrlParameter('indice');
+var cantidad = getUrlParameter('cantidad');
+if (indice === undefined) {
+  indice = 'R_100';
+  cantidad = 2;
+}
+
+switch(indice){
+  case "R_10":
+    var menu_active = document.getElementById("r10");
+    menu_active.classList.add("menu-active");
+  break;
+  case "R_25":
+  var menu_active = document.getElementById("r25");
+    menu_active.classList.add("menu-active");
+  break;
+  case "R_50":
+  var menu_active = document.getElementById("r50");
+    menu_active.classList.add("menu-active");
+  break;
+  case "R_75":
+  var menu_active = document.getElementById("r75");
+    menu_active.classList.add("menu-active");
+  break;
+  case "RDBEAR":
+  var menu_active = document.getElementById("rdbear");
+    menu_active.classList.add("menu-active");
+  break;
+  case "RDBULL":
+    var menu_active = document.getElementById("rdbull");
+    menu_active.classList.add("menu-active");    
+  break;
+  default:
+    var menu_active = document.getElementById("r100");
+    menu_active.classList.add("menu-active");
+
+}
+
+
+window.addEventListener('load', function() {
+
+const subscribeTicks = async () => {
+  connection.addEventListener("message", ticksResponse);
+  await tickSubscriber();
+};
+
+subscribeTicks();
+
+}, false);
+
+var dps = [];
+var WHead = [];
+var DigitEven = [];
+var DigitOdd = [];
+var mWmColorDigit = "";
+var ws = "";
+var b = "";
+var rnd = "";
+var spot = "";
+var DEB = "";
+var DER = "";
+var DOB = "";
+var DOR = "";
+var xd = "";
+var cnt = "";
+var random = "";
+var id = "";
+var lng = "";
+var str = "";
+var chart = "";
+var xVal = "";
+var yVal = "";
+var mType = "";
+var mColor = "";
+var rndMenu = "";
+var mSize = 0;
+var HeadThick = "";
+var mColorHead = "";
+var tic2nd = "";
+var yDigitEven = "";
+var DigiLabelEven = "";
+var xDigitEven = "";
+var sEColorDigit = "";
+var mEBGcolor = "";
+var yDigitOdd = "";
+var DigiLabelOdd = "";
+var xDigitOdd = "";
+var sOColorDigit = "";
+var mOBGcolor = "";
+var xDigit = "";
+var yDigit = "";
+var mColorDigit = "";
+var hdStripLine	="";
+var yVal2 = "";
+str=["R_100","R_10","R_25","R_50","R_75","RDBEAR","RDBULL"]; mType="none"; mColor="#32cd32"; lng="EN"; xVal=0; yVal=0; cnt=20;
+rndMenu = document.querySelectorAll('div.menu > span');
+
+for (var i = 0; i < rndMenu.length; i++) {
+  clickMenu(rndMenu[i]);
+}
+function toggleMenu(data) {
+  for (var i = 0; i < rndMenu.length; i++) {
+    rndMenu[i].classList.remove('menu-active');
+  }
+  data.classList.add('menu-active');
+}
+function clickMenu(data) {
+  data.addEventListener('click', function() {
+    toggleMenu(data);
+    
+    switch(data.title){
+      case "R_10":
+      case "R_25":
+        cantidad = 3;
+        window.location.href = window.location.pathname + '?indice=' + data.title + '&cantidad='+cantidad;
+      break;
+      case "R_50":
+      case "R_75":
+      case "RDBEAR":
+      case "RDBULL":
+        cantidad = 4;
+        window.location.href = window.location.pathname + '?indice=' + data.title + '&cantidad='+cantidad;
+      break;
+      default:
+        cantidad = 2;
+        window.location.href = window.location.pathname + '?indice=' + data.title + '&cantidad='+cantidad;
+      break;
+    }
+  });
+}
+function toggleDigit(d,m) {
+  var nameClass = document.querySelector("#digits > span:nth-child("+d+")").className;
+    if(nameClass != "digits_moved_"+m) {
+    document.querySelector("#digits > span:nth-child("+d+")").classList.remove(nameClass);
+    document.querySelector("#digits > span:nth-child("+d+")").classList.add("digits_moved_"+m);
+    
+  }
+}
+function toggleHead(e,s) {
+  var nameClass = document.querySelector("#headcol > span:nth-child("+e+")").className;
+  if(nameClass != "Head_moved_"+s) {
+    document.querySelector("#headcol > span:nth-child("+e+")").classList.remove(nameClass);
+    document.querySelector("#headcol > span:nth-child("+e+")").classList.add("Head_moved_"+s);
+  }
+}
+function togglePlace(f,g) {
+  var nameClass = document.querySelector("#placecol > span:nth-child("+f+")").className;
+  if(nameClass != "Place_moved_"+g) {
+    document.querySelector("#placecol > span:nth-child("+f+")").classList.remove(nameClass);
+    document.querySelector("#placecol > span:nth-child("+f+")").classList.add("Place_moved_"+g);
+  }
+}
+/*function rndGet() {
+  random = document.querySelector("body > div.menu > span.menu-active").title;
+  switch (random) {
+    case str[0]: rnd="R_100"; xd=2; break;
+    case str[1]: rnd="R_10"; xd=3; break;
+    case str[2]: rnd="R_25"; xd=3; break;
+    case str[3]: rnd="R_50"; xd=4; break;
+    case str[4]: rnd="R_75"; xd=4; break;
+    case str[5]: rnd="RDBEAR"; xd=4; break;
+    case str[6]: rnd="RDBULL"; xd=4; break;
+    default: rnd="R"; xd=0; break;
+  }
+}*/
+
+//rndGet();
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  aanimationEnabled: true,
+      theme: "dark1",
+      backgroundColor: "#1E1E1E",
+      display: false,
+      title: {
+        titleFontSize: 0,
+        text: "",
+      },
+      toolTip: {
+        enabled: true,
+        lineThickness: 1,
+        lineColor: "#43FFAF",
+      },
+      axisY: {
+        stripLines: [
+          {
+            color: "rgb(254,255,7)",
+            lineDashType: "dash",
+            opacity: 0.9,
+            label: "►",
+            labelPlacement: "outside",
+            labelAlign: "far",
+
+            labelFontColor: "rgb(247,1,67)",
+            labelBackgroundColor: "#432B00",
+          },
+        ],
+        includeZero: false,
+        titleFontSize: 5,
+        labelFontSize: 5,
+        gridThickness: 1,
+        gridColor: "#120A2A",
+        tickThiскness: 5,
+        tickLength: 5,
+        lineThickness: 1,
+        lineColor: "#43FFAF",
+      },
+      data: [
+        {
+          type: "line",
+          lineDashType: "solid",
+          lineColor: "#00FFF3",
+          lineThickness: 2,
+          markerType: "cross",
+          markerSize: 9,
+          markerBorderThickness: 1,
+          dataPoints: dps,
+        },
+      ],
+    });
+var chart2 = new CanvasJS.Chart("chartContainerDigit", {
+	animationEnabled: false,
+	theme: "light2",
+  backgroundColor: "#1E1E1E",
+  title: {
+		titleFontSize: 0,
+    text: ""
+	},
+	toolTip: {
+        enabled: true, 
+        animationEnabled: true,
+		borderColor: "#090a09",
+		borderThickness: 3,
+		fontColor: "#090a09",
+		content: "{y}"
+      },
+	axisX: {stripLines:WHead
+		,valueFormatString:"#000",
+		includeZero: false,
+    titleFontSize: 0,
+    labelFontSize: 0,
+    gridThickness: 0,
+    tickLength: 0,
+    lineThickness: 2
+	},
+	axisY: {stripLines:[
+			{
+				startValue:-0.05,
+				endValue:0.05,
+                                color:"#090a09",
+                               
+			}
+			],valueFormatString:"#000",
+		includeZero: false,
+    titleFontSize: 0,
+    labelFontSize: 0,
+    gridThickness: 0,
+    tickLength: 0,
+    lineThickness: 1
+	},
+	data: [{
+		type: "line",
+		lineColor: "#090a09",
+		lineThickness: 1,
+		markerType: "none",
+    markerSize: 6,
+    markerBorderThickness: 0,
+		dataPoints: DigitEven
+	},
+	{
+		type: "line",
+		lineColor: "#2C3E50",
+		lineThickness: 1,
+		markerType: "none",
+    markerSize: 6,
+    markerBorderThickness: 0,
+		dataPoints: DigitOdd
+	},]
+});
+
+import DerivAPIBasic from "https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic";
+var ticks_array = [];
+var ticks_reverse = [];
+var spot = [];
+var time = [];
+var tic = [];
+var thick = [];
+var digit = [];
+
+
+const app_id = 1089; // Replace with your app_id or leave as 1089 for testing.
+const connection = new WebSocket(
+  `wss://ws.binaryws.com/websockets/v3?app_id=${app_id}`
+);
+const api = new DerivAPIBasic({ connection });
+
+var ticks_history_request = {
+  ticks_history: indice,
+  adjust_start_time: 1,
+  count: 21,
+  end: "latest",
+  start: 1,
+  style: "ticks",
+  subscribe: 1
+};
+
+var ticks_request = {
+  ...ticks_history_request,
+  subscribe: 1
+};
+
+const tickSubscriber = () => api.subscribe(ticks_request);
+
+const ticksResponse = async (res) => {
+
+  const data = JSON.parse(res.data);
+
+  if (data.error !== undefined) {
+    console.log("Error : ", data.error.message);
+    connection.removeEventListener("message", ticksResponse, false);
+    await api.disconnect();
+  }
+
+  if (data.msg_type === "history") {
+    ticks_array = data.history.prices;
+    time = data.history.times;
+    
+    for (let i = 0; i < ticks_array.length; i++) {
+      spot.push(Number(ticks_array[i]).toFixed(cantidad))
+      digit.push(spot[spot.length - 1].slice(-1));
+
+    }
+
+  }  
+
+  // Allows you to monitor ticks.
+  if (data.msg_type === "tick") {
+    ticks_array.unshift(data.tick.ask);
+    spot.push(Number(data.tick.ask).toFixed(cantidad))
+    digit.push(spot[spot.length - 1].slice(-1));
+    time.push(data.tick.epoch);
+    //console.log(digit[digit.length - 1]);
+    if (ticks_array.length > 21) {
+      ticks_array.pop();
+      spot.shift();
+      digit.shift();
+      time.shift();
+    }
+
+    
+    ////////////////////////////////////////////////////////////////////
+      ///////////////////////azul////////////////////
+      if(spot[spot.length - 1] > spot[spot.length - 2]){
+        switch (digit[digit.length - 1]) {
+          case "0":
+            if (digit[digit.length - 2] > 5) {
+              var element = document.getElementById("cero-azul-9");
+              element.classList.remove("azul");
+              element.classList.add("tooggle-azul");
+            }else{
+              var element1 = document.getElementById("cero-azul-1");
+              element1.classList.remove("azul");
+              element1.classList.add("tooggle-azul");
+            }
+            break;
+          case "1":
+            var element = document.getElementById("uno-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "2":
+            var element = document.getElementById("dos-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "3":
+            var element = document.getElementById("tres-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "4":
+            var element = document.getElementById("cuatro-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "5":
+            if (digit[digit.length - 2] > 5) {
+              var element = document.getElementById("cinco-azul-9");
+              element.classList.remove("azul");
+              element.classList.add("tooggle-azul");
+            }else{
+              var element1 = document.getElementById("cinco-azul-1");
+              element1.classList.remove("azul");
+              element1.classList.add("tooggle-azul");
+            }
+            break;
+          case "6":
+            var element = document.getElementById("seis-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "7":
+            var element = document.getElementById("siete-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "8":
+            var element = document.getElementById("ocho-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+          case "9":
+            var element = document.getElementById("nueve-azul");
+            element.classList.remove("azul");
+            element.classList.add("tooggle-azul");
+            break;
+        }
+      }
+
+      ///////////////////////rojo////////////////////
+      if(spot[spot.length - 1] < spot[spot.length - 2]){
+        switch (digit[digit.length - 1]) {
+          case "0":
+            if (digit[digit.length - 2] > 5) {
+              var element = document.getElementById("cero-rojo-9");
+              element.classList.remove("rojo");
+              element.classList.add("tooggle-rojo");
+            }else{
+              var element1 = document.getElementById("cero-rojo-1");
+              element1.classList.remove("rojo");
+              element1.classList.add("tooggle-rojo");
+            }
+            break;
+          case "1":
+            var element = document.getElementById("uno-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "2":
+            var element = document.getElementById("dos-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "3":
+            var element = document.getElementById("tres-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "4":
+            var element = document.getElementById("cuatro-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "5":
+            if (digit[digit.length - 2] > 5) {
+              var element = document.getElementById("cinco-rojo-9");
+              element.classList.remove("rojo");
+              element.classList.add("tooggle-rojo");
+            }else{
+              var element1 = document.getElementById("cinco-rojo-1");
+              element1.classList.remove("rojo");
+              element1.classList.add("tooggle-rojo");
+            }
+            break;
+          case "6":
+            var element = document.getElementById("seis-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "7":
+            var element = document.getElementById("siete-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "8":
+            var element = document.getElementById("ocho-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+          case "9":
+            var element = document.getElementById("nueve-rojo");
+            element.classList.remove("rojo");
+            element.classList.add("tooggle-rojo");
+            break;
+        }
+      }
+
+      //if (spot[1] > spot[2]){
+        switch (digit[digit.length - 2]) {
+          case "0":
+            if (digit[digit.length - 3] > 5) {
+              if (spot[spot.length - 2] > spot[spot.length - 3]){
+                var element = document.getElementById("cero-azul-9");
+                element.classList.remove("tooggle-azul");
+                element.classList.add("amarillo");
+              }else{
+                var element1 = document.getElementById("cero-rojo-9");
+                element1.classList.remove("tooggle-rojo");
+                element1.classList.add("amarillo");
+              }
+            }else{
+              if (spot[spot.length - 2] > spot[spot.length - 3]){
+                var element2 = document.getElementById("cero-azul-1");
+                element2.classList.remove("tooggle-azul");
+                element2.classList.add("amarillo");
+              }else{
+                var element3 = document.getElementById("cero-rojo-1");
+                element3.classList.remove("tooggle-rojo");
+                element3.classList.add("amarillo");
+              }
+            }
+            break;
+          case "1":
+
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("uno-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("uno-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+
+            break;
+          case "2":
+
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("dos-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element2 = document.getElementById("dos-rojo");
+              element2.classList.remove("tooggle-rojo");
+              element2.classList.add("amarillo");
+            }
+            break;
+          case "3":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("tres-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("tres-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+          case "4":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("cuatro-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("cuatro-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+          case "5":
+            if (digit[digit.length - 3] > 5) {
+              if (spot[spot.length - 2] > spot[spot.length - 3]){
+                var element = document.getElementById("cinco-azul-9");
+                element.classList.remove("tooggle-azul");
+                element.classList.add("amarillo");
+              }else{
+                var element1 = document.getElementById("cinco-rojo-9");
+                element1.classList.remove("tooggle-rojo");
+                element1.classList.add("amarillo");
+              }
+            }else{
+              if (spot[spot.length - 2] > spot[spot.length - 3]){
+                var element2 = document.getElementById("cinco-azul-1");
+                element2.classList.remove("tooggle-azul");
+                element2.classList.add("amarillo");
+              }else{
+                var element3 = document.getElementById("cinco-rojo-1");
+                element3.classList.remove("tooggle-rojo");
+                element3.classList.add("amarillo");
+              }
+            }
+            break;
+          case "6":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("seis-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("seis-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+          case "7":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("siete-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("siete-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+          case "8":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("ocho-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("ocho-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+          case "9":
+            if (spot[spot.length - 2] > spot[spot.length - 3]){
+              var element = document.getElementById("nueve-azul");
+              element.classList.remove("tooggle-azul");
+              element.classList.add("amarillo");
+            }else{
+              var element1 = document.getElementById("nueve-rojo");
+              element1.classList.remove("tooggle-rojo");
+              element1.classList.add("amarillo");
+            }
+            break;
+        }
+      //}*/
+
+      switch (digit[digit.length - 3]) {
+          case "0":
+            if (digit[digit.length - 4] > 5) {
+              if (spot[spot.length - 3] > spot[spot.length - 4]){
+                var element = document.getElementById("cero-azul-9");
+                element.classList.remove("amarillo");
+                element.classList.add("verde");
+              }else{
+                var element1 = document.getElementById("cero-rojo-9");
+                element1.classList.remove("amarillo");
+                element1.classList.add("verde");
+              }
+            }else{
+              if (spot[spot.length - 3] > spot[spot.length - 4]){
+                var element2 = document.getElementById("cero-azul-1");
+                element2.classList.remove("amarillo");
+                element2.classList.add("verde");
+              }else{
+                var element3 = document.getElementById("cero-rojo-1");
+                element3.classList.remove("amarillo");
+                element3.classList.add("verde");
+              }
+            }
+            break;
+          case "1":
+
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("uno-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("uno-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+
+            break;
+          case "2":
+
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("dos-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element2 = document.getElementById("dos-rojo");
+              element2.classList.remove("amarillo");
+              element2.classList.add("verde");
+            }
+            break;
+          case "3":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("tres-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("tres-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+          case "4":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("cuatro-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("cuatro-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+          case "5":
+            if (digit[digit.length - 4] > 5) {
+              if (spot[spot.length - 3] > spot[spot.length - 4]){
+                var element = document.getElementById("cinco-azul-9");
+                element.classList.remove("amarillo");
+                element.classList.add("verde");
+              }else{
+                var element1 = document.getElementById("cinco-rojo-9");
+                element1.classList.remove("amarillo");
+                element1.classList.add("verde");
+              }
+            }else{
+              if (spot[spot.length - 3] > spot[spot.length - 4]){
+                var element2 = document.getElementById("cinco-azul-1");
+                element2.classList.remove("amarillo");
+                element2.classList.add("verde");
+              }else{
+                var element3 = document.getElementById("cinco-rojo-1");
+                element3.classList.remove("amarillo");
+                element3.classList.add("verde");
+              }
+            }
+            break;
+          case "6":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("seis-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("seis-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+          case "7":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("siete-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("siete-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+          case "8":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("ocho-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("ocho-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+          case "9":
+            if (spot[spot.length - 3] > spot[spot.length - 4]){
+              var element = document.getElementById("nueve-azul");
+              element.classList.remove("amarillo");
+              element.classList.add("verde");
+            }else{
+              var element1 = document.getElementById("nueve-rojo");
+              element1.classList.remove("amarillo");
+              element1.classList.add("verde");
+            }
+            break;
+        }
+
+        switch (digit[digit.length - 4]) {
+          case "0":
+            if (digit[digit.length - 5] > 5) {
+              if (spot[spot.length - 4] > spot[spot.length - 5]){
+                var element = document.getElementById("cero-azul-9");
+                element.classList.remove("verde");
+                element.classList.add("azul");
+              }else{
+                var element1 = document.getElementById("cero-rojo-9");
+                element1.classList.remove("verde");
+                element1.classList.add("rojo");
+              }
+            }else{
+              if (spot[spot.length - 4] > spot[spot.length - 5]){
+                var element2 = document.getElementById("cero-azul-1");
+                element2.classList.remove("verde");
+                element2.classList.add("azul");
+              }else{
+                var element3 = document.getElementById("cero-rojo-1");
+                element3.classList.remove("verde");
+                element3.classList.add("rojo");
+              }
+            }
+            break;
+          case "1":
+
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("uno-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("uno-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+
+            break;
+          case "2":
+
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("dos-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element2 = document.getElementById("dos-rojo");
+              element2.classList.remove("verde");
+              element2.classList.add("rojo");
+            }
+            break;
+          case "3":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("tres-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("tres-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+          case "4":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("cuatro-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("cuatro-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+          case "5":
+            if (digit[digit.length - 5] > 5) {
+              if (spot[spot.length - 4] > spot[spot.length - 5]){
+                var element = document.getElementById("cinco-azul-9");
+                element.classList.remove("verde");
+                element.classList.add("azul");
+              }else{
+                var element1 = document.getElementById("cinco-rojo-9");
+                element1.classList.remove("verde");
+                element1.classList.add("rojo");
+              }
+            }else{
+              if (spot[spot.length - 4] > spot[spot.length - 5]){
+                var element2 = document.getElementById("cinco-azul-1");
+                element2.classList.remove("verde");
+                element2.classList.add("azul");
+              }else{
+                var element3 = document.getElementById("cinco-rojo-1");
+                element3.classList.remove("verde");
+                element3.classList.add("rojo");
+              }
+            }
+            break;
+          case "6":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("seis-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("seis-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+          case "7":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("siete-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("siete-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+          case "8":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("ocho-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("ocho-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+          case "9":
+            if (spot[spot.length - 4] > spot[spot.length - 5]){
+              var element = document.getElementById("nueve-azul");
+              element.classList.remove("verde");
+              element.classList.add("azul");
+            }else{
+              var element1 = document.getElementById("nueve-rojo");
+              element1.classList.remove("verde");
+              element1.classList.add("rojo");
+            }
+            break;
+        }
+    ///////////////////////////////////////////////////////////////////
+
+
+    for(var i=0; i<cnt+1; i++){
+
+      if (spot[i] > spot[i-1]) {		
+        mWmColorDigit = "#1198D1";
+      } else if(spot[i] < spot[i-1]) {
+        mWmColorDigit = "#c03";
+      }
+            
+      xVal = new Date(time[i]*1000);
+      yVal = parseFloat(spot[i]);
+            
+      if(i==0) mType = "circle";
+      else mType = "circle";
+      if(yVal==Math.max.apply(null,spot)){
+        mColor = "#29abe2";
+        mType = "circle";
+        mSize = 6
+      }else if(yVal==Math.min.apply(null,spot)){
+        mColor = "#c03";
+        mType = "circle";
+        mSize = 6
+      }else if(i==0){
+        mColor = "#32cd32";
+        mSize = 6
+      }else{
+       mColor = "black";
+       mSize = 5
+      }
+    
+      dps.push({
+        x: xVal,
+        y: yVal,
+        indexLabel: digit[i],
+        indexLabelFontWeight: "bold",
+        indexLabelFontSize: 20, 
+        indexLabelFontColor:mWmColorDigit,
+        markerBorderColor: "#ccc",
+        markerSize: mSize,
+        markerType: mType,
+        markerColor: mColor,
+        markerBorderColor: "#ccc"
+      });
+      
+    }
+    
+    if(dps.length > cnt+1) {
+      while(dps.length != cnt+1) {
+        dps.shift();
+      }
+    }
+    
+    chart.render();
+
+    for (var i=1; i<cnt+1; i++) { 
+             
+      document.querySelector("#digits > span:nth-child("+i+")").innerHTML = digit[i];
+              
+      yVal2 = parseFloat(spot[spot.length - 1]);
+
+      if(yVal2==Math.max.apply(null,spot)){
+        HeadThick= "up";
+        mColorHead = "#29abe2";           
+      }else if(yVal2==Math.min.apply(null,spot)){      
+        HeadThick= "down";
+        mColorHead = "#c03";
+      }else{
+        HeadThick= "mid";
+        mColorHead = "#32cd32";
+      }
+      
+      if (spot[i-1] < spot[i]) {          
+        toggleDigit(i,"up");
+        if(digit[i] !=0) {
+          tic2nd= (digit[i]*1);
+        }
+        if(((digit[i-1]) > 5) && digit[i] ==0) {
+          tic2nd= (10);
+        //console.log("ok")
+        }
+        if(((digit[i-1]) <= 5) && digit[i] ==0) {
+          tic2nd= (0);
+        }
+      
+        } else if(spot[i-1] > spot[i]) {
+        toggleDigit(i,"down");
+        if(digit[i] !=0) {
+          tic2nd= (digit[i]*-1);
+        }
+        if (((digit[i-1]) > 5) && digit[i] ==0) {
+          tic2nd= (-10);
+        }
+        if (((digit[i-1]) <= 5) && digit[i] ==0) {
+          tic2nd= (-0);
+        }
+      } else if(spot[i-1]==spot[i] && i-1>0) {
+        if(document.querySelector("#digits > span:nth-child("+(i-1)+")").className == "digits_moved_up") {
+          toggleDigit(i,"up");
+        } else if(document.querySelector("#digits > span:nth-child("+(i-1)+")").className == "digits_moved_down") {
+          toggleDigit(i,"down");
+        }
+      
+      }
+  
+      if (tic.length > 19){
+        tic.shift();
+      }
+      tic.push(tic2nd);
+   }
+    
+     
+   if (thick.length > 19){
+     thick.shift();
+    }
+    thick.push(HeadThick);
+
+  for (var i=1; i<cnt+1; i++) { 
+
+    if (spot[i-1] < spot[i]) {          
+      toggleDigit(i,"up");
+      mColorDigit = "#29abe2";
+    }else if(spot[i-1] > spot[i]) {
+      toggleDigit(i,"down");
+      mColorDigit = "#c03";
+    } 
+    if (thick[i-1] == "up"){
+      hdStripLine	="#D6EAF8";
+    }else if (thick[i-1] == "down"){
+      hdStripLine	="#FADBD8";
+    }else if (thick[i-1] == "mid"){
+      hdStripLine	="#ABEBC6";
+    }else{
+      hdStripLine ="#FDFEFE";
+    }
+
+    toggleHead(i,thick[i-1]);
+    document.querySelector("#headcol > span:nth-child("+i+")").innerHTML = tic;
+      
+    xDigit = (i);
+    yDigit = parseFloat(tic[i-1]); 
+  
+    if (parseFloat(tic[i-1]) % 2 == 0){
+      yDigitEven = parseFloat(tic[i-1]); 
+      DigiLabelEven = digit[i];
+      xDigitEven = (i-1);
+
+      if (spot[i-1] < spot[i]) {          
+        sEColorDigit = "#29abe2";
+      } 
+      if(spot[i-1] > spot[i]) {
+        sEColorDigit = "#c03";
+      }
+      
+      if (digit[i-1] - digit[i] == 1 || digit[i-1] - digit[i] == -1 ) { 
+        mEBGcolor = "yellow";
+      }
+      else {
+        mEBGcolor = "white";		
+      } 
+    }
+  
+    if (parseFloat(tic[i-1]) % 2 != 0){
+      yDigitOdd = parseFloat(tic[i-1]); 
+      DigiLabelOdd = digit[i];
+      xDigitOdd = (i-1);
+      if (spot[i-1] < spot[i]) {          
+        sOColorDigit = "#29abe2";
+      } 
+      if(spot[i-1] > spot[i]) {
+        sOColorDigit = "#c03";
+      }
+
+      if (digit[i-1] - digit[i] == 1 || digit[i-1] - digit[i] == -1 ) { 
+        mOBGcolor = "yellow";
+      }
+      else {
+        mOBGcolor = "white";		
+      } 
+    }
+  
+
+    WHead.push({
+      startValue:(i-1.45),
+      endValue:(i-0.55),
+      color:hdStripLine       
+    });
+
+    DigitEven.push({                      
+      x: xDigitEven,
+      y: yDigitEven,
+      indexLabelFontColor:sEColorDigit,
+      indexLabel: DigiLabelEven,
+      indexLabelFontWeight: "bold",
+      indexLabelFontSize: 20,
+      markerType: "circle",
+      markerColor: sEColorDigit,
+      markerBorderColor: mEBGcolor,
+      markerBorderThickness: 4,
+    });
+
+    DigitOdd.push({                      
+      x: xDigitOdd,
+      y: yDigitOdd,
+      indexLabelFontColor:sOColorDigit,
+      indexLabel: DigiLabelOdd,
+      indexLabelFontWeight: "bold",
+      indexLabelFontSize: 20,
+      markerType: "circle",
+      markerColor: sOColorDigit,
+      markerBorderColor: mOBGcolor,
+      markerBorderThickness: 4,
+    });
+
+  }
+
+  if(WHead.length > cnt+1) {
+    while(WHead.length != cnt) {
+      WHead.shift();
+    }
+  }
+  
+  if(DigitEven.length > cnt+1) {
+    while(DigitEven.length != cnt) {
+      DigitEven.shift();
+    }
+  }
+  
+  if(DigitOdd.length > cnt+1) {
+    while(DigitOdd.length != cnt) {
+      DigitOdd.shift();
+    }
+  }
+
+  
+  chart2.render(); 
+  
+  xDigitOdd = [];
+  yDigitOdd = [];
+  xDigitEven = [];
+  yDigitEven = [];
+  }//fin if
+
+};
+
+
+</script>
+</html>
+
