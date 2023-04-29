@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding:  20px;
+  font-size: 8px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color:#1E1E1E ;
+}
+
+h1 {
+  color: rgb(38, 0, 255);
+  font-size: 18px;
+  line-height: 5px;
+  text-shadow: 0 0 30px #fff;
+  padding: 0px 0;
+  font-family: fantasy;
+  animation: myAnima 4s ease 0s infinite alternate forwards}
+
+  @keyframes myAnima {
+    0% {
+       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+       transform: scale(1);
+    }
+ 
+    100% {
+       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+       transform: scale(1.1);
+    }
+  }
+    
+  h1 .InterAnalyzerV8 {
+    width:23px;
+    Margin-left: 5px;  
+    Vertical-align:middle;
+    
+}
+.menu {
+  margin-bottom: 15px;
+  display: flex;
+}
+.menu span {
+  padding: 3px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #666666;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scaleX(0.4);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+.menu span:hover {
+  background: #c70000;
+}
+span.menu-active {
+  background: #be1212;
+}
+.digits {
+  margin-left: 10px;
+  margin-right: 11px;
+  margin-bottom: 4px;
+  display: flex;
+}
+.digits span {
+  
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 2;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+.digits_moved_down {
+  background-color: rgb(199, 6, 6);
+}
+.digits_moved_up {
+  background-color: #2805c2;
+}
+.headcol {
+  margin-left: 10px;
+  margin-right: 11px;
+  margin-bottom: 2px;
+  display: flex;
+}
+.headcol span {
+  padding: 10px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0px;
+  border-radius: 5px;
+  color: #d63d00;
+}
+.Head_moved_down {
+  background-color: #c03;
+}
+.Head_moved_up {
+  background-color: #29abe2;
+}
+.Head_moved_mid {
+  background-color: #32cd32;
+}
+.placecol {
+  margin-bottom: 20px;
+  display: flex;
+}
+.placecol span {
+  padding: 1px;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0px;
+  border-radius: 5px;
+  color: #fff;
+}
+.Place_moved_down {
+  background-color: rgb(202, 0, 0);
+}
+.Place_moved_up {
+  background-color: #220081;
+}
+.Place_moved_none {
+  background-color: #fff;
+}
+.chartContainer {
+ margin-bottom: 5px;
+  min-height: 150px;
+  min-width: 125px;
+}
+.chartContainerDigit {
+  min-height: 150px;
+  min-width: 125px;
+}
