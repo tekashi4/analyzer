@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DM_Analyzer</title>
+    <link href="images/favicon-16x16.png" type="image/png" rel="icon" sizes="16x16">
+    <link href="images/favicon-32x32.png" type="image/png" rel="icon" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="digits.js"></script>
+  </head>
+  <body class="EN">
+    <div class="menu" style="margin-bottom: 3px";>
+      <span class="menu-active" title="R_100">100</span>
+      <span class="" title="R_10">10</span>
+      <span class="" title="R_25">25</span>
+      <span class="" title="R_50">50</span>
+      <span class="" title="R_75">75</span>
+      <span class="" title="RDBEAR">BEAR</span>
+      </div>
+      <div class="menu">
+      <span class="" title="1HZ100V">100(1s)</span>
+      <span class="" title="1HZ10V">10(1s)</span>
+      <span class="" title="1HZ25V">25(1s)</span>
+      <span class="" title="1HZ50V">50(1s)</span>
+      <span class="" title="1HZ75V">75(1s)</span>
+      <span class="" style="word-spacing: 0.7em"; title="RDBULL">&nbsp;BULL&nbsp;</span>
+    </div>
+
+    
+    <div class="chartContainer" id="chartContainer"></div>
+    <div id="colDigits" class="colDigits">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span> 
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span> 
+    </div>
+    
+    <div id="spot" class="spot">
+      <span class="0000.000"></span>    
+    </div>
+    
+    <div class="chartDigit20" id="chartDigit20"></div>
+    <div class="chartDigit25" id="chartDigit25"></div>
+    <div class="chartDigit50" id="chartDigit50"></div>
+    <div class="chartDigit100" id="chartDigit100"></div>
+    <div class="chartDigit500" id="chartDigit500"></div>
+    <div class="chartDigit1000" id="chartDigit1000"></div>
+    <script src="canvasjs.min.js"></script>
+
+       	
+	    
+   
+
+  </body>
+</html>
