@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AnalyZer FLAT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="digits.js"></script>
+    <style>
+        table, th, td {
+          border: 6px solid black;
+          //border-collapse: collapse;
+        }
+    </style>
+    
+  </head>
+  <body class="EN">
+           
+    <div class="chartContainer" id="chartContainer" hidden="hidden"></div>
+    
+    <script src="canvasjs.min.js"></script>
+    
+    <div id="digits" class="digits">
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+
+	<br>
+
+	<div class="menu" style="margin-bottom: 3px";>
+      <span class="menu-active" title="R_100">100</span>
+      <span class="" title="R_10">10</span>
+      <span class="" title="R_25">25</span>
+      <span class="" title="R_50">50</span>
+      <span class="" title="R_75">75</span>
+      <span class="" title="RDBEAR">BEAR</span>
+      </div>
+    
+    	<table id="odd_blue" hidden="hidden">
+          <td id="blue_rec" style="background: blue; width: 200%; "></td> 
+          <td style="width: 10%;"></td>
+          <td id="blue_1">1</td> 
+          <td></td>
+          <td id="blue_3">3</td>  
+          <td></td>
+          <td id="blue_5">5</td> 
+          <td></td>
+          <td id="blue_7">7</td>
+          <td></td>
+          <td id="blue_9">9</td>
+        </table>
+	    
+	    <table id="level_odd_blue"  hidden="hidden">
+          <td id="levelblue_rec" style="background: black; width: 110%; "></td> 
+          <td style="width: 100%;"></td>
+          <td id="levelblue_1"></td> 
+          <td></td>
+          <td id="levelblue_3"></td>  
+          <td></td>
+          <td id="levelblue_5"></td> 
+          <td></td>
+          <td id="levelblue_7"></td>
+          <td></td>
+          <td id="levelblue_9"></td>
+        </table>
+        
+        <table id="even_blue_red" hidden="hidden">  
+          <td id="red_empty" style="background:black; width: 110%; border-spacing: 0%;"><img src="images/Logo_3.png" type="image/png" rel="icon" style="width: 75%;"></img></td> 
+          <td id="blueRed_0">0</td>
+          <td></td>
+          <td id="blueRed_2">2</td>
+          <td></td> 
+          <td id="blueRed_4">4</td>
+          <td></td>
+          <td id="blueRed_6">6</td> 
+          <td></td>
+          <td id="blueRed_8">8</td> 
+          <td></td>                       
+	    </table>
+	    
+        <table id="level_even_blue_red" hidden="hidden">  
+          <td id="levelred_empty" style="background: black; width: 110%; "></td> 
+          <td id="levelblueRed_0"></td>
+          <td></td>
+          <td id="levelblueRed_2"></td>
+          <td></td> 
+          <td id="levelblueRed_4"></td>
+          <td></td>
+          <td id="levelblueRed_6"></td> 
+          <td></td>
+          <td id="levelblueRed_8"></td> 
+          <td></td>
+	    </table>
+	    
+        <table id="odd_red" hidden="hidden">
+          <td id="red_rec" style="background: red; width: 200%; "></td>  
+          <td style="width: 10%;"></td>
+          <td id="red_1">1</td> 
+          <td></td>
+          <td id="red_3">3</td>
+          <td></td>
+          <td id="red_5">5</td> 
+          <td></td>
+          <td id="red_7">7</td>
+          <td></td>
+          <td id="red_9">9</td>
+        </table>
+        
+        <table id="level_odd_red" hidden="hidden">
+          <td id="levelred_rec" style="background: black; width: 110%; "></td>  
+          <td style="width: 100%;"></td>
+          <td id="levelred_1"></td> 
+          <td></td>
+          <td id="levelred_3"></td>
+          <td></td>
+          <td id="levelred_5"></td> 
+          <td></td>
+          <td id="levelred_7"></td>
+          <td></td>
+          <td id="levelred_9"></td>
+        </table>
+
+
+  </body>
+</html>
