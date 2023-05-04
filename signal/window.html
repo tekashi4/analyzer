@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signal Binary Premium-DWWH-FJ 1.0</title>
+    <link href="images/favicon-16x16.png" type="image/png" rel="icon" sizes="16x16">
+    <link href="images/favicon-32x32.png" type="image/png" rel="icon" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="digits.js"></script>
+    <script src="mytime.js"></script>
+  </head>
+  <body class="EN">
+    <h1 hidden="hidden">Signal Binary Premium-DWWH-FJ 1.0</h1>
+    <div class="menu">
+      <span class="menu-active" title="R_100">100</span>
+      <span class="" title="R_10">10</span>
+      <span class="" title="R_25">25</span>
+      <span class="" title="R_50">50</span>
+      <span class="" title="R_75">75</span>
+      <span class="" title="RDBEAR">BEAR</span>
+      <span class="" title="RDBULL">BULL</span>
+    </div>
+    
+    <div class="chartContainer" id="chartContainer" hidden="hidden"></div>
+    <script src="canvasjs.min.js"></script>
+	<div id="digits" class="digits">
+      <span class="_"  hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_"  hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span> 
+    </div>
+    <div class="tab" hidden="hidden">
+      <div style="max-width:500px;text-align: center;display:inline-block">
+        <button class="tablinks active" onclick="opentab(event, 'ldp3')">LDP 3</button>
+        <!-- <button disble style="background -color: transparent;color: transparent;">-</button> -->
+        <button class="tablinks" style="margin-left:10px;margin-right:10px" onclick="opentab(event, 'ldp4')">LDP 4</button>
+        <button class="tablinks" style="" onclick="opentab(event, 'about')">About</button>
+      </div>
+    </div>
+    <div style="max-width:300px;text-align: center;display:inline-block" >
+      <div id="about" style="max-width:275px;text-align: center;display:none;margin-bottom:10px;" class="tabcontent">
+        <span>
+          Signal Binary Premium-DWWH-FJ 1.0
+        </span>
+        <br>
+        <span>
+          Mark of Nicholas
+        </span>
+      </div>
+    <div id="ldp4" style="max-width:275px;text-align: center;display:none" class="tabcontent" hidden="hidden">
+      <div style="border:2px blue solid; border-bottom: 0px solid white;">
+        <label for="UP" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; color: blue; margin-right: 20px;margin-left: 20px;">UP</label hidden="hidden">
+        <label for="arrowUp" style=" background: #bdd7ee; font-size: 20px; font-weight: 900;margin-right: 5%; color: blue; font-family: Wingdings;">&#x2192</label hidden="hidden">
+        <label for="arrowDown" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; margin-left: 5%; color: red; font-family: Wingdings;">&#8592</label hidden="hidden">
+        <label for="DOWN" style="background: #f8cbac; font-size: 20px; font-weight: 900; color: red; margin-right: 10px;margin-left: 0px;">DOWN</label hidden="hidden">
+      </div>
+      <table id="head_bluebreak" style="border:2px blue solid;border-top: 0px solid white; background: #bdd7ee; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;" hidden="hidden"> 
+        <td id="blue_0" style="padding:3px 6px;color:  #bdd7ee;">0</td>
+        <td id="blue_1" style="padding:3px 6px;color:  #bdd7ee;">1</td>
+        <td id="blue_2" style="padding:3px 6px;color:  #bdd7ee;">2</td>
+        <td id="blue_3" style="padding:3px 6px;color:  #bdd7ee;">3</td>
+        <td id="blue_4" style="padding:3px 6px;color:  #bdd7ee;">4</td>
+        <td id="blue_5" style="padding:3px 6px;color:  #bdd7ee;">5</td>
+        <td id="blue_6" style="padding:3px 6px;color:  #bdd7ee;">6</td>
+        <td id="blue_7" style="padding:3px 6px;color:  #bdd7ee;">7</td>
+        <td id="blue_8" style="padding:3px 6px;color:  #bdd7ee;">8</td>
+        <td id="blue_9" style="padding:3px 6px;color:  #bdd7ee;">9</td>
+        <td id="blue_10" style="padding:3px 6px;color:  #bdd7ee;">0</td>
+      </table>
+      <table id="head_blue" style="background: #bdd7ee; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;" hidden="hidden">  
+        <td id="blue_green_0" style="padding:3px 6px;color: #bdd7ee;">0</td>
+        <td id="red_green_1" style="padding:3px 6px;color: #bdd7ee;">1</td>
+        <td id="blue_green_2" style="padding:3px 6px;color: #bdd7ee;">2</td>    
+        <td id="red_green_3" style="padding:3px 6px;color: #bdd7ee;">3</td>    
+        <td id="blue_green_4" style="padding:3px 6px;color: #bdd7ee;">4</td>     
+        <td id="red_green_5" style="padding:3px 6px;color: #bdd7ee;">5</td>     
+        <td id="blue_green_6" style="padding:3px 6px;color: #bdd7ee;">6</td>      
+        <td id="red_green_7" style="padding:3px 6px;color: #bdd7ee;">7</td>      
+        <td id="blue_green_8" style="padding:3px 6px;color: #bdd7ee;">8</td>      
+        <td id="red_green_9" style="padding:3px 6px;color: #bdd7ee;">9</td>     
+        <td id="blue_green_10" style="padding:3px 6px;color: #bdd7ee;">0</td>                  
+	    </table>
+	    <table id="head_red" style="background: #f8cbac; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;" hidden="hidden">        
+        <td id="red_green_0" style="padding:3px 6px;color: #f8cbac;">0</td>
+        <td id="blue_green_1" style="padding:3px 6px;color: #f8cbac;">1</td>       
+        <td id="red_green_2" style="padding:3px 6px;color: #f8cbac;">2</td>
+        <td id="blue_green_3" style="padding:3px 6px;color: #f8cbac;">3</td>        
+        <td id="red_green_4" style="padding:3px 6px;color: #f8cbac;">4</td>
+        <td id="blue_green_5" style="padding:3px 6px;color: #f8cbac;">5</td>       
+        <td id="red_green_6" style="padding:3px 6px;color: #f8cbac;">6</td>
+        <td id="blue_green_7" style="padding:3px 6px;color: #f8cbac;">7</td>       
+        <td id="red_green_8" style="padding:3px 6px;color: #f8cbac;">8</td>
+        <td id="blue_green_9" style="padding:3px 6px;color: #f8cbac;">9</td>       
+        <td id="red_green_10"style="padding:3px 6px;color: #f8cbac;">0</td>            
+      </table>
+      <table id="head_redbreak" style="border:2px red solid; border-bottom: 0px solid white; background: #f8cbac; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;" hidden="hidden">
+        <td id="red_0" style="padding:3px 6px;color: #f8cbac;">0</td>
+        <td id="red_1" style="padding:3px 6px;color: #f8cbac;">1</td> 
+        <td id="red_2" style="padding:3px 6px;color: #f8cbac;">2</td>
+        <td id="red_3" style="padding:3px 6px;color: #f8cbac;">3</td>
+        <td id="red_4" style="padding:3px 6px;color: #f8cbac;">4</td>
+        <td id="red_5" style="padding:3px 6px;color: #f8cbac;">5</td> 
+        <td id="red_6" style="padding:3px 6px;color: #f8cbac;">6</td>
+        <td id="red_7" style="padding:3px 6px;color: #f8cbac;">7</td>
+        <td id="red_8" style="padding:3px 6px;color: #f8cbac;">8</td>
+        <td id="red_9" style="padding:3px 6px;color: #f8cbac;">9</td>
+        <td id="red_10" style="padding:3px 6px;color: #f8cbac;">0</td> 
+      </table>
+      <div style="border:2px red solid; border-top: 0px solid white;" hidden="hidden">
+        <label for="DOWN" style="background: #f8cbac; font-size: 20px; font-weight: 900; color: red; margin-right: 0px;margin-left: 0px;">DOWN</label>
+        <label for="arrowDown" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-right: 5%; color: red; font-family: Wingdings;">&#x2192</label>
+        <label for="arrowUp" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-left: 5%; color: blue; font-family: Wingdings;">&#8592</label>
+        <label for="UP" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; color: blue; margin-right: 20px; margin-left: 20px; ">UP</label>
+      </div>
+    </div>
+    <div id="ldp3" style="max-width:275px;text-align: center;display:inline-block" class="tabcontent" hidden="hidden">
+      <div hidden="hidden">
+        <label for="" style=" background: #bdd7ee; font-size: 20px; font-weight: 900;margin-right: 10%; color: blue; font-family: Wingdings;">&#x2192</label>
+        <label for="" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; color: blue;">UP</label>
+        <label for="" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; margin-left: 10%; color: red; font-family: Wingdings;">&#8592</label>
+      </div>
+      <table id="head_bluebreak" style="background: #bdd7ee; width: 20%; float: left; font-size: 13px; font-weight: 900;margin-right: 20px;margin-left: 10px;" hidden="hidden"> 
+        <td id="xblue_0" style="padding:3px 6px;color: blue;">0</td>
+        <td id="xblue_1" style="padding:3px 6px;color: blue;">1</td>
+        <td id="xblue_2" style="padding:3px 6px;color: blue;">2</td>
+        <td id="xblue_3" style="padding:3px 6px;color: blue;">3</td>
+        <td id="xblue_4" style="padding:3px 6px;color: blue;">4</td>
+        <td id="xblue_5" style="padding:3px 6px;color: blue;">5</td>
+        <td id="xblue_6" style="padding:3px 6px;color: blue;">6</td>
+        <td id="xblue_7" style="padding:3px 6px;color: blue;">7</td>
+        <td id="xblue_8" style="padding:3px 6px;color: blue;">8</td>
+        <td id="xblue_9" style="padding:3px 6px;color: blue;">9</td>
+        <td id="xblue_10" style="padding:3px 6px;color: blue;">0</td>
+      </table>
+      <table id="head_blue" style="background: #bdd7ee; width: 20%; float: left; font-size: 13px; font-weight: 900;margin-right: 20px;margin-left: 10px;" hidden="hidden">  
+        <td id="xblue_green_0" style="padding:3px 6px;color: blue;">0</td>
+        <td id="xred_green_1" style="padding:3px 6px;color: red;">1</td>
+        <td id="xblue_green_2" style="padding:3px 6px;color: blue;">2</td>    
+        <td id="xred_green_3" style="padding:3px 6px;color: red;">3</td>    
+        <td id="xblue_green_4" style="padding:3px 6px;color: blue;">4</td>     
+        <td id="xred_green_5" style="padding:3px 6px;color: red;">5</td>     
+        <td id="xblue_green_6" style="padding:3px 6px;color: blue;">6</td>      
+        <td id="xred_green_7" style="padding:3px 6px;color: red;">7</td>      
+        <td id="xblue_green_8" style="padding:3px 6px;color: blue;">8</td>      
+        <td id="xred_green_9" style="padding:3px 6px;color: red;">9</td>     
+        <td id="xblue_green_10" style="padding:3px 6px;color: blue;">0</td>                  
+      </table>
+      <table id="head_red" style="background: #f8cbac; width: 30%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 10px;" hidden="hidden">        
+        <td id="xred_green_0" style="padding:3px 6px;color: red;">0</td>
+        <td id="xblue_green_1" style="padding:3px 6px;color: blue;">1</td>       
+        <td id="xred_green_2" style="padding:3px 6px;color: red;">2</td>
+        <td id="xblue_green_3" style="padding:3px 6px;color: blue;">3</td>        
+        <td id="xred_green_4" style="padding:3px 6px;color: red;">4</td>
+        <td id="xblue_green_5" style="padding:3px 6px;color: blue;">5</td>       
+        <td id="xred_green_6" style="padding:3px 6px;color: red;">6</td>
+        <td id="xblue_green_7" style="padding:3px 6px;color: blue;">7</td>       
+        <td id="xred_green_8" style="padding:3px 6px;color: red;">8</td>
+        <td id="xblue_green_9" style="padding:3px 6px;color: blue;">9</td>       
+        <td id="xred_green_10"style="padding:3px 6px;color: red;">0</td>            
+      </table>
+      <table id="head_redbreak" style="background: #f8cbac; width: 30%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 10px;" hidden="hidden">
+        <td id="xred_0" style="padding:3px 6px;color: red;">0</td>
+        <td id="xred_1" style="padding:3px 6px;color: red;">1</td> 
+        <td id="xred_2" style="padding:3px 6px;color: red;">2</td>
+        <td id="xred_3" style="padding:3px 6px;color: red;">3</td>
+        <td id="xred_4" style="padding:3px 6px;color: red;">4</td>
+        <td id="xred_5" style="padding:3px 6px;color: red;">5</td> 
+        <td id="xred_6" style="padding:3px 6px;color: red;">6</td>
+        <td id="xred_7" style="padding:3px 6px;color: red;">7</td>
+        <td id="xred_8" style="padding:3px 6px;color: red;">8</td>
+        <td id="xred_9" style="padding:3px 6px;color: red;">9</td>
+        <td id="xred_10" style="padding:3px 6px;color: red;">0</td> 
+      </table>
+      <div hidden="hidden">
+        <label for="" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-right: 10%; color: red; font-family: Wingdings;">&#x2192</label>
+        <label for="" style="background: #f8cbac; font-size: 20px; font-weight: 900; color: red;">DOWN</label>
+        <label for="" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-left: 10%; color: blue; font-family: Wingdings;">&#8592</label>
+      </div>
+      
+    </div>
+    <div style="background-color: rgb(59, 59, 59);">
+      <span id="vPink" style="color:pink;text-align: center;">x</span>
+      <span id="vCyan" style="color:cyan;text-align: center;">x</span>
+      <span id="vGreen" style="color:greenyellow;text-align: center;">x</span>
+      <span id="vWhite" style="color: white;text-align: center;">x</span>
+      <span id="vYellow" style="color: yellow;text-align: center;">Z</span>
+    </div>
+  </div>
+    <div>
+      <div>
+        <span id="algo" style="color: white;"  "text-align: center;">Algo</span>
+      </div>
+      <div>
+        <span id="sinyal" class="bottomright" style="color: white;" "font-size: 24px;">Forecasting...</span></div>
+      </div>
+      <a href="javascript:window.location.reload(true)">Reload</a></div>
+      <div id="canvas" class="container group">
+        <div id="primaryContent" class="group">
+            <span id="myToday" hidden="hidden"></span>
+            <span id="myTime" style="font-weight: 900;color: red;" hidden="hidden"></span>
+        </div> 
+      </div>
+    <script>
+      function opentab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+
+</html>

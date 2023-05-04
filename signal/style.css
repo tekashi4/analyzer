@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+}
+h1 {
+  color: white;
+  font-size: 12px;
+}
+.menu {
+  margin-bottom: 10px;
+  display: flex;
+}
+.blueb{
+  background: blue;
+  color:white;
+}
+.redb{
+  background: red;
+  color:white;
+}
+.menu span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: yellow;
+  background-color: red;
+}
+.menu span:hover {
+  background: grey;
+}
+span.menu-active {
+  background: grey;
+}
+.digits {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.digits span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 2;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.digits_moved_down {
+  background-color: #c03;
+}
+.digits_moved_up {
+  background-color: #29abe2;
+}
+.headcol {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.headcol span {
+  padding: 2px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Head_moved_down {
+  background-color: #c03;
+}
+.Head_moved_up {
+  background-color: #29abe2;
+}
+.Head_moved_mid {
+  background-color: #32cd32;
+}
+
+
+.digit_red {
+  border-radius: 50% ;
+  color: black;
+  background: red;
+  border-color: black;
+  border-width: thick;
+  transition: background 1s;
+}
+
+.digit_blue {
+  border-radius: 50% ;
+  color: black;
+  background: blue;
+  border-color: black;
+  border-width: thick;
+  transition: background 1s;
+
+}
+
+
+.chartContainer {
+ margin-bottom: 2px;
+  min-height: 120px;
+  min-width: 125px;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  margin-top:20px;
+  min-width: 50px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 3px 0;
+  min-width: 50px;
+  font-size: 13px;
+  color: white;
+  border-radius: 5px;
+  background-color: #666666;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #191919;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #191919;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+  margin-top:10px;
+}
+
+.menu span:hover {
+  background: #191919;
+}
+span.menu-active {
+  background: #191919;
+}
+
+.Active_1 {
+  border-radius: 50% ;
+  background: yellow;
+  transition: background 1s;
+}
+
+.Active_2 {
+  border-radius: 50% ;
+  background: white;
+  transition: background 1s;
+
+}
+.Active_3 {
+   border-radius: 50% ;
+   background: lightgreen;
+   transition: background 1s;
+}
