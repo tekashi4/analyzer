@@ -139,8 +139,8 @@ span.menu-active {
 }
 .chartContainer {
  margin-bottom: 15px;
-  min-height: 120px;
-  min-width: 125px;
+  min-height: 220px;
+  min-width: 225px;
 }
 .chartContainerDigit {
   min-height: 150px;
