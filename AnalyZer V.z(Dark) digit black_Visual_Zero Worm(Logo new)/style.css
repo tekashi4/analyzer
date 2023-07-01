@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Arial", sans-serif; 
+  background-color: black;
+}
+
+h1 {
+  line-height: 5px;
+  padding: 0px 0;
+  font-style: italic;
+}
+
+h1 .InterAnalyzerV8 {
+    width:18px;
+    Margin-left: 5px;  
+    Vertical-align:middle;
+}
+
+span[Blue-H1-col="blue_H1"] {
+  font-size: 18px;
+  color: blue;
+}
+
+span[yellow-H1-col="yellow_H1"] {
+  font-size: 18px;
+  color: #FFFF00;
+}
+
+h2 {
+  color: blue;
+  font-size: 18px;
+  line-height: 5px;
+  padding: 0px 0;
+  font-style: italic;
+  
+}
+.span, .text {
+    Vertical-align:middle;  
+   }
+
+h1 {
+    display:table;
+    width:100%;
+}
+
+.menu {
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.menu span { 
+  width: auto; 
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow:1;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #031400;
+  background-color: #39ff14;
+}
+
+.menu span:hover {
+  background: #137600
+}
+
+span.menu-active {
+  background: #137600;
+  color: #efffec;
+}
+
+.digits {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.digits span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 10;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.digits_moved_Down {
+  background-color: #ff1439;
+}
+.digits_moved_Up {
+  background-color: #1439ff;
+}
+
+.digitsGrd_moved_Down {
+  border: 4px solid gray;
+  background: black;
+  color: #ff1439;
+}
+
+.digitsGrd_moved_Up {
+  border: 4px solid gray;
+  background: black;
+  color: #1439ff;
+}
+
+.tGrid,
+.bGrid {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.tGrid,
+.bGrid span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 10;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px; 
+}
+
+
+.headcol {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.headcol span {
+  padding: 2px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0px;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.Head_moved_down {
+  background-color: #ff1439;
+}
+.Head_moved_up {
+  background-color: #1439ff;
+}
+.Head_moved_mid {
+  background-color: #39ff14;
+}
+
+
+.chartContainer {
+ margin-bottom: 2px;
+  min-height: 120px;
+  min-width: 125px;
+}
+
+
+.head_Bar_down {
+  border-top: 5px solid #ff1439;
+}
+.head_Bar_up {
+  border-top: 5px solid #1439ff;
+}
+.head_Bar_mid {
+  border-top: 5px solid #39ff14;
+}
+
+
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 30px;
+  height: 16px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #39ff14 100%, #39ff14 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 1px;
+  left: 14px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #39ff14 0%, #39ff14 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: grey;
+}
+
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 2px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+ .toggle-label {
+     color: #00ffff;
+     font-family: "Arial", sans-serif; 
+     font-style: italic;
+     font-weight: bold;
+     
+    position: relative;
+    top: 2px;
+    
+}
+
+
+table{
+          border: 1px solid gray;
+          border-collapse: collapse;
+          
+          text-align: center;
+    		background: black; 
+    		width: 100%; 
+    		height: 20px; 
+    		font-size: 16px; 
+    		font-weight: 900; 
+    		color: black;
+    		font-style: normal;
+    		border-spacing: 10% 1%;
+    		table-layout: fixed;
+        }
+
+  		
+    		
+
+
