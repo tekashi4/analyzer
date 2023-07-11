@@ -1,0 +1,31 @@
+{
+  "name": "AnalyZer_ind6_Zx_ZZx",
+  "description": "Google Chrome Application analyzes Digits from Binary server",
+  "version": "1.3",
+  "manifest_version": 2,
+  "app": {
+      "background": {
+          "scripts": ["background.js"]
+       }
+   },
+   "permissions": ["alwaysOnTopWindows" ],
+
+  "icons": { 
+    "16": "images/favicon-16x16.png",
+    "32": "images/favicon-32x32.png",
+    "36": "images/favicon-36x36.png",
+    "48": "images/favicon-48x48.png",
+    "57": "images/favicon-57x57.png",
+    "60": "images/favicon-60x60.png",
+    "64": "images/favicon-70x70.png",
+    "72": "images/favicon-72x72.png",
+    "76": "images/favicon-76x76.png",
+    "96": "images/favicon-96x96.png",
+    "114": "images/favicon-114x114.png",
+    "120": "images/favicon-120x120.png",
+    "144": "images/favicon-144x144.png",
+    "152": "images/favicon-152x152.png",
+    "180": "images/favicon-180x180.png",
+    "192": "images/favicon-192x192.png" 
+  }
+}

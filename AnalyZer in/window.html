@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AnalyZer ind6_Zx_ZZxSignal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="digits.js"></script>
+  </head>
+  <body class="EN">
+      <br>  
+    <div class="menu" style="margin-bottom: 3px";>
+      <span class="" title="R_100">100</span>
+      <span class="menu-active" title="R_10">10</span>
+      <span class="" title="R_25">25</span>
+      <span class="" title="R_50">50</span>
+      <span class="" title="R_75">75</span>
+      <span class="" title="RDBEAR">BEAR</span>
+      <span class="" style="word-spacing: 0.7em"; title="RDBULL">&nbsp;BULL&nbsp;</span>
+    </div>
+	<div class="menu" style="margin-bottom: 3px";>
+	<span class="" title="1HZ100V">1s100</span>
+	<span class="" title="1HZ10V">1s10</span>
+	<span class="" title="1HZ25V">1s25</span>
+	<span class="" title="1HZ50V">1s50</span>
+	<span class="" title="1HZ75V">1s75</span>
+	</div>
+   <div class="chartContainer column" id="chartContainer" style="width:100%"></div>
+     
+
+   <div class="chartContainer" id="chartContainer"></div>
+    <script src="canvasjs.min.js"></script>
+    
+    <input id="DigitOnOff" type="checkbox" value="test"     indeterminate="true" unchecked>
+    <label for="the-checkbox">
+       <img src="images/worm2.png"  style="width:15px">
+    </label>
+
+     <label class="switch">
+        <input type="checkbox"id="xZCheck" unchecked>
+        <span class="slider round"></span>
+    </label>
+    
+	<div id="digits" class="digits">
+      <span class="_"  hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+    </div>
+    
+    <div id="headcol" class="headcol">
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_" hidden="hidden"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span>
+      <span class="_"></span> 
+    </div>
+	<div style="border:2px blue solid; border-bottom: 0px solid white;">
+	    <label for="UP" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; color: blue; margin-right: 20px;margin-left: 20px;">UP</label>
+	    <label for="arrowUp" style=" background: #bdd7ee; font-size: 20px; font-weight: 900;margin-right: 5%; color: blue; font-family: Wingdings;">&#232</label>
+	    <label for="arrowDown" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; margin-left: 5%; color: red; font-family: Wingdings;">&#231</label>
+	    <label for="DOWN" style="background: #f8cbac; font-size: 20px; font-weight: 900; color: red; margin-right: 10px;margin-left: 0px;">DOWN</label>
+	</div>
+	
+        <table id="head_blue_green" style="border:2px blue solid;border-top: 0px solid white; background: #bdd7ee; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;"> 
+          <td id="blue_0" style="padding:3px 6px;color:  blue;">0</td>
+          <td id="blue_1" style="padding:3px 6px;color:  blue;">1</td>
+          <td id="blue_2" style="padding:3px 6px;color:  blue;">2</td>
+          <td id="blue_3" style="padding:3px 6px;color:  blue;">3</td>
+          <td id="blue_4" style="padding:3px 6px;color:  blue;">4</td>
+          <td id="blue_5" style="padding:3px 6px;color:  blue;">5</td>
+          <td id="blue_6" style="padding:3px 6px;color:  blue;">6</td>
+          <td id="blue_7" style="padding:3px 6px;color:  blue;">7</td>
+          <td id="blue_8" style="padding:3px 6px;color:  blue;">8</td>
+          <td id="blue_9" style="padding:3px 6px;color:  blue;">9</td>
+          <td id="blue_10" style="padding:3px 6px;color:  blue;">0</td>
+        </table>
+    
+        <table id="head_blue_green" style="background: #bdd7ee; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;">  
+          <td id="blue_green_0" style="padding:3px 6px;color: blue;">0</td>
+          <td id="red_green_1" style="padding:3px 6px;color: red;">1</td>
+          <td id="blue_green_2" style="padding:3px 6px;color: blue;">2</td>    
+          <td id="red_green_3" style="padding:3px 6px;color: red;">3</td>    
+          <td id="blue_green_4" style="padding:3px 6px;color: blue;">4</td>     
+          <td id="red_green_5" style="padding:3px 6px;color: red;">5</td>     
+          <td id="blue_green_6" style="padding:3px 6px;color: blue;">6</td>      
+          <td id="red_green_7" style="padding:3px 6px;color: red;">7</td>      
+          <td id="blue_green_8" style="padding:3px 6px;color: blue;">8</td>      
+          <td id="red_green_9" style="padding:3px 6px;color: red;">9</td>     
+          <td id="blue_green_10" style="padding:3px 6px;color: blue;">0</td>                  
+	    </table>
+      
+	    <table id="head_red_green" style="background: #f8cbac; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;">        
+          <td id="red_green_0" style="padding:3px 6px;color: red;">0</td>
+          <td id="blue_green_1" style="padding:3px 6px;color: blue;">1</td>       
+          <td id="red_green_2" style="padding:3px 6px;color: red;">2</td>
+          <td id="blue_green_3" style="padding:3px 6px;color: blue;">3</td>        
+          <td id="red_green_4" style="padding:3px 6px;color: red;">4</td>
+          <td id="blue_green_5" style="padding:3px 6px;color: blue;">5</td>       
+          <td id="red_green_6" style="padding:3px 6px;color: red;">6</td>
+          <td id="blue_green_7" style="padding:3px 6px;color: blue;">7</td>       
+          <td id="red_green_8" style="padding:3px 6px;color: red;">8</td>
+          <td id="blue_green_9" style="padding:3px 6px;color: blue;">9</td>       
+          <td id="red_green_10"style="padding:3px 6px;color: red;">0</td>            
+        </table>
+    
+        <table id="head_red" style="border:2px red solid; border-bottom: 0px solid white; background: #f8cbac; width: 100%; float: left; font-size: 13px; font-weight: 900;margin-right: 10px;margin-left: 0px;">
+          <td id="red_0" style="padding:3px 6px;color: red;">0</td>
+          <td id="red_1" style="padding:3px 6px;color: red;">1</td> 
+          <td id="red_2" style="padding:3px 6px;color: red;">2</td>
+          <td id="red_3" style="padding:3px 6px;color: red;">3</td>
+          <td id="red_4" style="padding:3px 6px;color: red;">4</td>
+          <td id="red_5" style="padding:3px 6px;color: red;">5</td> 
+          <td id="red_6" style="padding:3px 6px;color: red;">6</td>
+          <td id="red_7" style="padding:3px 6px;color: red;">7</td>
+          <td id="red_8" style="padding:3px 6px;color: red;">8</td>
+          <td id="red_9" style="padding:3px 6px;color: red;">9</td>
+          <td id="red_10" style="padding:3px 6px;color: red;">0</td> 
+        </table>
+        
+    <div style="border:2px red solid; border-top: 0px solid white;">
+        <label for="DOWN" style="background: #f8cbac; font-size: 20px; font-weight: 900; color: red; margin-right: 0px;margin-left: 10px;">DOWN</label>
+        <label for="arrowDown" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-right: 5%; color: red; font-family: Wingdings;">&#232</label>
+        <label for="arrowUp" style=" background: #f8cbac; font-size: 20px; font-weight: 900;margin-left: 5%; color: blue; font-family: Wingdings;">&#231</label>
+	    <label for="UP" style=" background: #bdd7ee; font-size: 20px; font-weight: 900; color: blue; margin-right: 20px; margin-left: 20px; ">UP</label>
+    </div>
+
+     
+  </body>
+</html>
