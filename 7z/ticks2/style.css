@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+h1 {
+  font-size: 12px;
+}
+.menu {
+  margin-bottom: 10px;
+  display: flex;
+}
+.menu span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #666666;
+}
+.menu span:hover {
+  background: #191919;
+}
+span.menu-active {
+  background: #191919;
+}
+.digits {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.digits span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 2;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.spot_col_down {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #c03;
+}
+.spot_col_up {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #29abe2;
+}
+
+
+.digits_moved_down {
+  background-color: #c03;
+}
+.digits_moved_up {
+  background-color: #29abe2;
+}
+.headcol {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.headcol span {
+  padding: 2px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Head_moved_down {
+  background-color: #c03;
+}
+.Head_moved_up {
+  background-color: #29abe2;
+}
+.Head_moved_mid {
+  background-color: #32cd32;
+}
+
+
+.Active_1 {
+  border-radius: 50% ;
+  background: yellow;
+  transition: background 1s;
+}
+
+.Active_2 {
+  border-radius: 50% ;
+  background: white;
+  transition: background 1s;
+
+}
+.Active_3 {
+   border-radius: 50% ;
+   background: lightgreen;
+   transition: background 1s;
+}
+
+.chartContainer {
+ margin-bottom: 2px;
+  min-height: 120px;
+  min-width: 125px;
+}
+
+.chartDigit20{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit25{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit25{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit50{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit100{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit500{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.chartDigit1000{
+ margin-bottom: 2px;
+  min-height: 80px;
+  min-width: 125px;
+}
+.colDigits {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.colDigits span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 2;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: black;
+}
+
+.digits_col_zero {
+  background-color: #F0F8FF;
+}
+.digits_col_one {
+  background-color: #FFFF00;
+}
+.digits_col_two {
+  background-color: #00FFFF;
+}
+.digits_col_three {
+  background-color: #FFA500;
+}
+.digits_col_four {
+  background-color: #808000;
+}
+.digits_col_five {
+  background-color: #ff0000;
+}
+.digits_col_six {
+  background-color: #FF1493;
+}
+.digits_col_seven {
+  background-color: #4169E1;
+}
+.digits_col_eight {
+  background-color: #ff00ff;
+}
+.digits_col_nine {
+  background-color: #00FF00;
+}
